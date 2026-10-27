@@ -5,7 +5,7 @@ from datetime import datetime
 
 
 def update_clock() -> None:
-    """Display the current local time and schedule the next update."""
+    """Display the current local time and schedule the next update as showing below"""
     time_label.config(text=datetime.now().strftime("%H:%M:%S"))
     root.after(1000, update_clock)
 
